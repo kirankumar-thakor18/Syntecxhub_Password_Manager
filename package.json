@@ -1,0 +1,19 @@
+{
+  "name": "syntecxhub_password_manager",
+  "version": "1.0.0",
+  "description": "Local password manager with AES-256-GCM encrypted JSON storage",
+  "type": "module",
+  "main": "src/cli.js",
+  "bin": {
+    "vault": "src/cli.js"
+  },
+  "scripts": {
+    "start": "node src/cli.js",
+    "test": "node --test",
+    "check": "node --check src/crypto.js && node --check src/password.js && node --check src/vault.js && node --check src/cli.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT"
+}
